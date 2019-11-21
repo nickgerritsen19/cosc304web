@@ -16,7 +16,7 @@
 // Get product name to search for
 // TODO: Retrieve and display info for the product
 // String productId = request.getParameter("id");
-// Another change
+// This is only going to be a local change. (Hopefully.)
 String sql = "";
 
 // TODO: If there is a productImageURL, display using IMG tag
