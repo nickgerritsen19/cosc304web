@@ -1,5 +1,6 @@
 <%@ page import="java.util.HashMap" %>
 <%@ page import="java.text.NumberFormat" %>
+<%@ page import="javax.servlet.http.HttpUtils.*" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF8"%>
 <%@ include file="jdbc.jsp" %>
 
@@ -33,20 +34,25 @@ try (Connection con = DriverManager.getConnection(url, uid, pw);
 	// TODO: Retrieve and display info for the product
 	String productId = request.getParameter("id");
 	
-	String sql = "SELECT productName, productPrice FROM product WHERE productId = '" + productId + "' ";
+	String sql = "SELECT productName, productPrice, productImageURL FROM product WHERE productId = '" + productId + "' ";
 	ResultSet rst = stmt.executeQuery(sql);
 	rst.next();
 	String productName = rst.getString("productName");
 	Double productPrice = rst.getDouble("productPrice");
+	String productImageURL = rst.getString("productImageURL");
 	
 	out.println("<h2>"+productName+"</h2>");
 	out.println("<table><tr>");
 	out.println("<th>Id</th><td>"+productId+"</td></tr><tr><th>Price</th><td>"+currFormat.format(productPrice)+"</td></tr>");
 	out.println("</table>");
+	
 	// TODO: If there is a productImageURL, display using IMG tag
-			
+	String path = request.getContextPath();
+	out.println("<img src=" + path + "/" + productImageURL + ">");
+	
 	// TODO: Retrieve any image stored directly in database. Note: Call displayImage.jsp with product id as parameter.
-			
+	
+	
 	// TODO: Add links to Add to Cart and Continue Shopping
 	String addCartLink = "addcart.jsp?id=1&name="+productName+"&price="+productPrice;
 	out.print("<h3><a href=\""+addCartLink+"\">Add to Cart</a></h3>");
