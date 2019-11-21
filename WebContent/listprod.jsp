@@ -94,7 +94,7 @@ try (Connection con = DriverManager.getConnection(url, uid, pw);
 		String productPrice = currFormat.format(rst.getDouble("productPrice"));
 		// addcart.jsp?id=productId&name=productName&price=productPrice
 		String link = "addcart.jsp?id=" + productId + "&name=" + productName + "&price=" + rst.getDouble("productPrice");
-		out.print("<tr><td><a href=\"" + link + "\">Add to Cart</a></td><td>"+productName+"</td><td>"+productPrice+"</td></tr>");
+		out.print("<tr><td><a href=\"" + link + "\">Add to Cart</a></td><td><a href=\"product.jsp?id=" + productId + "\"<font color=\"#0000FF\"> " + productName + "</font></td><td>"+productPrice+"</td></tr>");
 	}
 	out.print("</table>");
 
