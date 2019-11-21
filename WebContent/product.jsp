@@ -35,7 +35,8 @@ try (Connection con = DriverManager.getConnection(url, uid, pw);
 	String productId = request.getParameter("id");
 	
 	String sql = "SELECT productName, productPrice, productImageURL FROM product WHERE productId = '" + productId + "' ";
-	ResultSet rst = stmt.executeQuery(sql);
+	PreparedStatement pstmt = con.prepareStatement(sql);
+	ResultSet rst = pstmt.executeQuery();
 	rst.next();
 	String productName = rst.getString("productName");
 	Double productPrice = rst.getDouble("productPrice");
