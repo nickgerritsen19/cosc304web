@@ -16,7 +16,7 @@
 // Get product name to search for
 // TODO: Retrieve and display info for the product
 // String productId = request.getParameter("id");
-// This is only going to be a local change. (Hopefully.)
+// Now this is going to be a commit on the lab8 branch.
 String sql = "";
 
 // TODO: If there is a productImageURL, display using IMG tag
