@@ -5,7 +5,7 @@
 
 <html>
 <head>
-<title>Ray's Grocery - Product Information</title>
+<title>Gerritsen Grocery - Product Information</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -16,7 +16,7 @@
 // Get product name to search for
 // TODO: Retrieve and display info for the product
 // String productId = request.getParameter("id");
-// Now this is going to be a commit on the lab8 branch.
+
 String sql = "";
 
 // TODO: If there is a productImageURL, display using IMG tag
