@@ -52,7 +52,7 @@ try (Connection con = DriverManager.getConnection(url, uid, pw);
 	out.println("<img src=" + path + "/" + productImageURL + ">");
 	
 	// TODO: Retrieve any image stored directly in database. Note: Call displayImage.jsp with product id as parameter.
-	
+	out.println("<img src=" + path + "/displayImage.jsp?id=" + productId + ">");
 	
 	// TODO: Add links to Add to Cart and Continue Shopping
 	String addCartLink = "addcart.jsp?id=1&name="+productName+"&price="+productPrice;
