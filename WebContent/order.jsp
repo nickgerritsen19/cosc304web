@@ -148,7 +148,7 @@ try (Connection con = DriverManager.getConnection(url, uid, pw);
 	    out.print("<h2>Order completed.  Will be shipped soon...</h2>");
 	    out.print("<h2>Your order reference number is: " + orderId + "</h2>");
 	    out.print("<h2>Shipping to customer: " + custId + " Name: " + firstName + " " + lastName + "</h2>");
-	    out.print("<h2><a href=\"shop.html\">Return to shopping</a></h2>");
+	    out.print("<h2><a href=\"index.jsp\">Return to shopping</a></h2>");
 	    out.print("</div>");
 		
 		sql = "SELECT productName FROM product ORDER BY productName ASC";
