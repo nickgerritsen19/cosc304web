@@ -37,6 +37,9 @@ div {
 </style>
 <title>Gerritsen Grocery Order List</title>
 </head>
+
+<%@ include file="header.jsp" %>
+
 <body>
 
 <h1>Order List</h1>

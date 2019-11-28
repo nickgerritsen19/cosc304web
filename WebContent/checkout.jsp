@@ -2,6 +2,9 @@
 <head>
 <title>Gerritsen Grocery</title>
 </head>
+
+<%@ include file="header.jsp" %>
+
 <body>
 
 <h1>Enter your customer id and password to complete the transaction:</h1>
@@ -16,4 +19,3 @@
 
 </body>
 </html>
-

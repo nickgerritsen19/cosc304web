@@ -7,6 +7,7 @@
 
 <%@ include file="auth.jsp"%>
 <%@ include file="jdbc.jsp" %>
+<%@ include file="header.jsp" %>
 
 <%
 	String userName = (String) session.getAttribute("authenticatedUser");

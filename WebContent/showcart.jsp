@@ -40,6 +40,9 @@ div {
 </style>
 <title>Your Shopping Cart</title>
 </head>
+
+<%@ include file="header.jsp" %>
+
 <body>
 
 <%

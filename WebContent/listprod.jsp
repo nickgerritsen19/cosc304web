@@ -38,8 +38,11 @@ div {
 	border-color: #34aeeb;
 }
 </style>
-<title>Gerritsen Grocery</title>
+<title>Browse Items</title>
 </head>
+
+<%@ include file="header.jsp" %>
+
 <body>
 
 <h1>Search for the products you want to buy:</h1>

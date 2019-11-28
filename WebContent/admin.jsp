@@ -9,6 +9,7 @@
 <%@ include file="jdbc.jsp"%>
 <%@ include file="auth.jsp"%>
 <%@ page import="java.text.NumberFormat" %>
+<%@ include file="header.jsp" %>
 
 <%
 // TODO: Write SQL query that prints out total order amount by day

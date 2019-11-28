@@ -7,7 +7,6 @@
 <html>
 <head>
 <title>Gerritsen Grocery - Product Information</title>
-<link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <%@ include file="header.jsp" %>
