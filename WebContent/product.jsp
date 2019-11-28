@@ -48,11 +48,13 @@ try (Connection con = DriverManager.getConnection(url, uid, pw);
 	out.println("</table>");
 	
 	// TODO: If there is a productImageURL, display using IMG tag
-	String path = request.getContextPath();
-	out.println("<img src=" + path + "/" + productImageURL + ">");
+	//out.println("<img src=/" + productImageURL + ">"); //Use this for the local server
+	out.println("<img src=../Lab8/" + productImageURL + ">"); //Use this for the remote server
+	//new 
 	
 	// TODO: Retrieve any image stored directly in database. Note: Call displayImage.jsp with product id as parameter.
-	out.println("<img src=" + path + "/displayImage.jsp?id=" + productId + ">");
+	//out.println("<img src=/displayImage.jsp?id=" + productId + ">"); //Use this for the local server
+	out.println("<img src=../Lab8/displayImage.jsp?id=" + productId + ">"); //Use this for the remote server
 	
 	// TODO: Add links to Add to Cart and Continue Shopping
 	String addCartLink = "addcart.jsp?id=1&name="+productName+"&price="+productPrice;
