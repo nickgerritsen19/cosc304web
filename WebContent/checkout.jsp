@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Gerritsen Grocery</title>
+<title>Checkout</title>
 </head>
 
 <%@ include file="header.jsp" %>

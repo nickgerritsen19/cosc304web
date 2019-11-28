@@ -6,7 +6,7 @@
 
 <html>
 <head>
-<title>Gerritsen Grocery - Product Information</title>
+<title>Product Information</title>
 </head>
 <body>
 <%@ include file="header.jsp" %>

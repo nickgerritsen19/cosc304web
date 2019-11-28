@@ -43,7 +43,7 @@ div {
 	border-color: #34aeeb;
 }
 </style>
-<title>Gerritsen Grocery Order Processing</title>
+<title>Order Processing</title>
 </head>
 <body>
 
