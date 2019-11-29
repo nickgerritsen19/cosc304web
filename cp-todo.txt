@@ -1,0 +1,66 @@
+To do:
+update quantity
+* add textbox for quantity
+- update button that updates database
+- data validation; 0 removes from cart, no negatives etc.
+
+remove item from shopping cart
+* add delete button
+- delete item from cart
+
+improved formatting/UI
+* CSS in for the page
+
+cart stored in database between sessions
+- update database on changes
+
+product detail page and item description
+* create new page
+* clicking item links to page
+- format page with item name and description
+
+create account with data validation
+- no blanks
+- no email in database
+
+edit user account info (address, password)
+- edit page
+- on change, make sure doesn't exist in  database  (email)
+- no blanks
+
+page listing all orders for user
+* link to order history page
+- list all orders
+
+ability to enter a review on a product
+- on product details page
+- text box to write and submit review
+- update review table
+
+display product review on product detail page
+- on product detail page, list all the reviews
+
+display item inventory by store/warehouse
+- read from product inventory (do this on product details page)
+
+edit item inventory by store/warehouse
+- admin product page link to inventory page
+- display item quantity per warehouse
+- add textbox to change quantity (no negatives)
+
+list all customers
+- admin page link to customers page
+- list all customers
+
+list report showing total sales/orders
+- admin page add total sales number and total orders number
+
+add new product
+- admin page link to products page
+- add product
+- no empty name
+
+update/delete product
+- admin product page link to inventory page
+- delete button to remove 
+- no empty name/price, no negative price
